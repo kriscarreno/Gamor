@@ -1,0 +1,57 @@
+.title{
+  text-align: center;
+}
+.title h1{
+  color: white;
+}
+.header{
+  background: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.header .links{
+  list-style: none;
+}
+
+.header .links li:hover{
+  transform: scale(1.1);
+}
+
+.header .links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .links a{
+  font-size: large;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.header .links a:hover{
+  color: var(--primary-color);
+}
+
+.header .title h1{
+  color: var(--text);
+}
+
+.header .btn button{
+  font-weight: 700;
+  padding: 9px 25px;
+  background: var(--bg_btn);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color:var(--text_btn);
+  border: none;
+}
+
+.header .btn button:hover{
+  transform: scale(1.1);
+}
+

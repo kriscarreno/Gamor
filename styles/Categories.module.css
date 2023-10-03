@@ -1,0 +1,36 @@
+.categoriescontainer{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.categories{
+    display: block;
+    justify-content: center;
+    
+}
+
+.categorie{
+    background-color: var(--secondary-color);
+}
+
+.categories div :hover{
+    background-color: rgb(189, 187, 187);
+    cursor: pointer;
+}
+
+.categorie h6{
+    font-size: large;
+    margin-left: 5px;
+}
+
+.categorie p{
+    font-size: large;
+    margin-left: 5px;
+}
+
+@media (max-width: 850px) {
+    .categoriescontainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

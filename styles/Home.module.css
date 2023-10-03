@@ -1,0 +1,73 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardcontainer{
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) ;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 1000px;
+}
+
+.card1{
+	grid-column: span 12/ span 12;
+  display: grid;
+  grid-template-columns: repeat(12,minmax(0,1fr));
+  background-color:var(--secondary-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.btn_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .btn button{
+  font-weight: 700;
+  padding: 9px 25px;
+  margin-right: 5px;
+  background: var(--button);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: var(--text);
+  border: none;
+}
+.container .btn button:hover{
+  transform: scale(1.1);
+}
+
+.container{
+  display:block;
+  justify-content: center;
+  margin-left: 10px;
+  grid-column: span 4/span 4;
+}
+
+.card1 .container div{
+  color: var(--text);
+  margin-bottom: 50px;
+  white-space: pre-line;
+}
+
+.anuncio{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.selector{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(170, 163, 163, 0.57);
+  border-radius: 50px;
+}
+
+
+

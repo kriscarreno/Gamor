@@ -1,0 +1,39 @@
+.containerform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  .form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .form div {
+    margin-bottom: 10px;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form input, .form textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .form button:hover {
+    background-color: #45a049;
+  }
