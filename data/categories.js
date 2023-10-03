@@ -44,7 +44,7 @@ export const categories=[
         title:'Shooter Games',
         number:'07',
         color:null,
-        image:'/R.jpg'
+        image:'var(--image)'
     },
     {
         title:'All Categories',

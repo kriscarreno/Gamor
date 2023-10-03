@@ -1,8 +1,7 @@
-.title{
+
+.header h1{
   text-align: center;
-}
-.title h1{
-  color: white;
+  color: var(--text);
 }
 .header{
   background: var(--background-color);
@@ -10,7 +9,8 @@
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  padding: 5px 10%;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .header .links{

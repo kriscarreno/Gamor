@@ -18,6 +18,8 @@ body {
   --bg_btn:black;
   --text_btn:white;
   --text:black;
+  --image:url('/R.jpg');
+  --avatar:url('/OIP-removebg-preview.png');
 
 }
 
@@ -29,7 +31,8 @@ body {
   --button:rgb(176, 176, 176);
   --bg_btn:rgb(176, 176, 176);
   --anuncio: purple;
-
+  --image:url('/AB.jpg');
+  --avatar:url('/starlord-removebg-preview.png');
 }
 
 .switch {

@@ -7,7 +7,7 @@ const Categories = () => {
         <div className={styles.categoriescontainer}>
         {
             categories.map(Categorie=>
-                <div className={styles.categorie} style={{backgroundImage:`url(${Categorie.image})`,backgroundSize:'cover',backgroundPosition:'center'}}>
+                <div key={Categorie.title} className={styles.categorie} style={{backgroundImage:Categorie.image,backgroundSize:'cover',backgroundPosition:'center'}}>
                     <p style={{color:`${Categorie.color}`}}>/</p>
                     <p style={{color:'var(--text)'}}>{Categorie.number}</p>
                     <p style={{color:'var(--text)'}}>{Categorie.title}</p>

@@ -2,9 +2,10 @@ import styles from '../styles/Home.module.css'
 import Navbar from './NavBar';
 import Head from 'next/head';
 const Layout = ({children}) => {
-
-
-
+if(typeof window !=='undefined')
+if(!window.localStorage.getItem('user')){
+  window.localStorage.setItem('user','')
+}
     return ( 
         <>
        <Head>
