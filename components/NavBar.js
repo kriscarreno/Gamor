@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from '../styles/NavBar.module.css';
 import { useRouter } from 'next/router';
 import { useState,useEffect } from 'react';
@@ -23,26 +22,29 @@ export default function Navbar() {
 
 
   return (
+    <header className={styles.headercontainer} >
     <nav className={styles.header}>
-         <h1>Gamor</h1>
          
-        <ul className={styles.links}>
-          <li><a href='/'>Home</a></li>
-          <li><a href='/'>Streams</a></li>
-          <li><a href='/'>Party</a></li>
-          <li><a href='/'>Premium</a></li>
-        </ul>
-
         
+        <ul className={styles.links}>
+        <li><a href='/' className={router.pathname == '/' ? styles.current : ''}>Home</a></li>
+      <li><a href='/streams' className={router.pathname == '/streams' ? 'active' : ''}>Streams</a></li>
+      <li><a href='/party' className={router.pathname == '/party' ? 'active' : ''}>Party</a></li>
+      <li><a href='/premium' className={router.pathname == '/premium' ? 'active' : ''}>Premium</a></li>
+        </ul>
+        </nav>
+        <h1 className={styles.title}>Gamor</h1>
 
-      <div >
-      {loggedIn===true?<a className={styles.btn}><button onClick={logout}>Log out</button></a>:
+      <div className={styles.btncontainer} >
+      {loggedIn===true?<><a className={styles.btn}><button style={{backgroundColor:'#f0f2f400',border:'none'}} onClick={logout}>Log out</button></a>
+      <a className={styles.btn}><button style={{color:'var(--text_btn2)'}}>Profile</button></a>
+      </>:
       <>
-            <a className={styles.btn}><button onClick={()=>router.push('/login')}>Sign In</button></a>
+            <a className={styles.btn}><button style={{backgroundColor:'#f0f2f400'}} onClick={()=>router.push('/login')}>Sign In</button></a>
             <a className={styles.btn}><button>Create account</button></a></>
             }
             </div>
-
-    </nav>
+            </header>
+   
   );
 }

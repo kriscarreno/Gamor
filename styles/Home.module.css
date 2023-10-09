@@ -1,29 +1,48 @@
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.cardcontainer{
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr)) ;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  width: 1000px;
-}
-
 .card1{
-	grid-column: span 12/ span 12;
-  display: grid;
-  grid-template-columns: repeat(12,minmax(0,1fr));
+  display: flex;
   background-color:var(--secondary-color);
-  height: 100%;
-  width: 100%;
-  border-radius: 2%;
+  border-radius: 20px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-
+@media screen and (max-height: 100px){
+  .anuncio{
+    position: relative;
+    top:100%
+  }
+}
+@media screen and (max-width: 1000px) {
+  .card1 {
+    flex-direction: column;
+  }
+  .container{
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn_container{
+    flex-direction: column;
+  }
+  .container .btn button{
+    margin-bottom: 2px;
+  }
+  .anuncio{
+    position: relative;
+    top:50%
+  }
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  width: calc(100% - 4rem);;
+}
 .btn_container{
   display: flex;
   justify-content: center;
@@ -31,9 +50,11 @@
 }
 .container .btn button{
   font-weight: 700;
-  padding: 9px 25px;
+  height: 50px;
+  width: 130px;
   margin-right: 5px;
-  background: var(--button);
+  margin-top: 10px;
+  background: var(--bg_btn);
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -42,14 +63,10 @@
 }
 .container .btn button:hover{
   transform: scale(1.1);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
 
-.container{
-  display:block;
-  justify-content: center;
-  margin-left: 10px;
-  grid-column: span 4/span 4;
-}
+
 
 .card1 .container div{
   color: var(--text);
@@ -58,36 +75,63 @@
 }
 
 .anuncio{
+  position: absolute;
+  bottom:30%;
   font-size: 3em;
   font-weight: bold;
 }
 
+
 .selector{
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
-  background-color: rgba(170, 163, 163, 0.57);
+  background-color: var(--background-color);
   border-radius: 50px;
+  width: 100%;
+  height: 50px;
 }
 
 .selector button{
-  background-color: rgba(170, 163, 163, 0.57);
+  background-color: var(--background-color);
   border: none;
-  border-radius: 50px;
-  width: 100%;
+  border-radius: 30px;
+  width:100%;
   height: 40px;
+  margin: 5px;
   color: var(--text);
   transition: all 0.3s ease;
 }
 
 .selector button:focus{
-  background-color: gray;
+  background-color: var(--secondary-color);
 }
 
 .image{
   background: var(--avatar);
-  background-size: cover;
+   background-size: cover; 
   background-position: center;
   width: 100%;
-  height: 60%;
+  height: 100%;
+  display: flex;
+}
+
+.toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circulos{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.circulo{
+  position: relative;
+  top: 10%;
+    height: 90px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid var(--anuncio);
+    clip-path: ellipse(160px 50px at 60% 60%);
+    transform: rotate(-15deg) skewX(-10dg);
 }

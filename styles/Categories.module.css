@@ -3,34 +3,38 @@
     grid-template-columns: repeat(4, minmax(230px, 1fr));
     gap: 20px;
 }
+@media screen and (max-width: 1000px) {
+    .categoriescontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .categories{
+        margin: 50px;
+    }
+}
 
 .categories{
     display: block;
     justify-content: center;
-    
+    margin-bottom: 20px;
 }
 
 .categorie{
     background-color: var(--secondary-color);
+    border-radius: 30px;
 }
 
-.categories div :hover{
-    background-color: rgb(189, 187, 187);
+.categoriescontainer :hover{
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .categorie h6{
     font-size: large;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .categorie p{
     font-size: large;
-    margin-left: 5px;
-}
-
-@media (max-width: 850px) {
-    .categoriescontainer {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    margin-left: 10px;
 }

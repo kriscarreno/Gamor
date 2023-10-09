@@ -12,10 +12,9 @@ if(!window.localStorage.getItem('user')){
         <title>Gamor</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar/>
+      
       <main className={styles.main}>
-         
+      <Navbar/>
         {children}
       </main>
         </>

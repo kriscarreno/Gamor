@@ -2,42 +2,66 @@ export const games=[
     {
         name:'Call of Duty',
         rank:'Shooter',
-        friends:2
+        friends:1,
+        color1:'red',
+        color2:'yellow',
+        avatar:'/este.png'
     },
     {
         name:'Fortnite',
         rank:'Shooter',
-        friends:2
+        friends:2,
+        color1:'blue',
+        color2:'green',
+        avatar:'/este.png'
     },
     {
         name:'The Witcher',
         rank:'Adventure',
-        friends:2
+        friends:3,
+        color1:'orange',
+        color2:'purple',
+        avatar:'/este.png'
     },
     {
         name:'Teken',
         rank:'Arcade',
-        friends:2
+        friends:4,
+        color1:'green',
+        color2:'pink',
+        avatar:'/este.png'
     },
     {
-        name:'World of Warcraft',
+        name:'Wow',
         rank:'Adventure',
-        friends:2
+        friends:5,
+        color1:'blue',
+        color2:'yellow',
+        avatar:'/este.png'
     }
     ,
     {
         name:'Star Craft',
         rank:'Strategy',
-        friends:2
-    },,
+        friends:6,
+        color1:'yellow',
+        color2:'yellow',
+        avatar:'/este.png'
+    },
     {
         name:'God of War',
         rank:'Fantasy',
-        friends:2
-    },,
+        friends:7,
+        color1:'orange',
+        color2:'yellow',
+        avatar:'/este.png'
+    },
     {
-        name:'Red dead redemption',
+        name:'Naruto',
         rank:'Action',
-        friends:2
+        friends:8,
+        color1:'gray',
+        color2:'yellow',
+        avatar:'/este.png'
     },
 ]

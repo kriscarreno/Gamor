@@ -1,37 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
   background: var(--background-color);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans';
+  font-family: 'Roboto',sans-serif;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 
 :root{
-  --primary-color: #791cb8;
-  --secondary-color: #e2e2e2;
-  --background-color: #f3f3f3;
+  --primary-color: #7e34ee;
+  --secondary-color:#f3f5f7 ;
+  --background-color: #f0f2f4;
   --anuncio: rgb(220, 143, 9);
-  --button:rgb(176, 176, 176);
-  --bg_btn:black;
+  --message:#414040;
+  --button:rgb(0, 0, 0);
+  --button-focus:rgba(240, 242, 244, 0);
+  --bg_btn:rgb(255, 255, 255);
+  --text_btn2:white;
   --text_btn:white;
   --text:black;
-  --image:url('/R.jpg');
+  --image:url('/AB.jpeg');
   --avatar:url('/OIP-removebg-preview.png');
-
 }
 
 [data-theme='dark']{
   --text:white;
-  --primary-color: #f8a034;
-  --secondary-color: #3d3c4792;
-  --background-color: #262432;
-  --button:rgb(176, 176, 176);
-  --bg_btn:rgb(176, 176, 176);
-  --anuncio: purple;
-  --image:url('/AB.jpg');
+  --button-focus:#f0f2f400;
+  --primary-color: #fe8944;
+  --message:#747474;
+  --secondary-color: #21272f;
+  --background-color: #1a2028;
+  --button:#13171c;
+  --text_btn:black;
+  --text_btn2:rgb(255, 255, 255);
+  --bg_btn:#343a3f;
+  --anuncio: #7a34e4;
+  --image:url('/R.jpg');
   --avatar:url('/starlord-removebg-preview.png');
 }
 

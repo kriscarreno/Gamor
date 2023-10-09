@@ -46,7 +46,7 @@ import { useState } from 'react';
     return ( 
         <> 
         <div className={styles.title}>
-                <h1>Sign IN</h1>
+                <h1>Welcome to Gamor!</h1>
             </div>       
         <div className={styles.containerform}>
             <div className={styles.left}></div>
@@ -58,7 +58,7 @@ import { useState } from 'react';
                         <p>Password</p>
                         <input onChange={handleInputChange} value={form.password} type='Password'  name='password' placeholder='******'></input>
                         <button type='submit' >Sign In</button>
-                        <a>Toggle Theme</a>
+                        <a style={{marginRight:'5px'}}>Toggle Theme</a>
                         <label className="switch" >
                     <input type="checkbox" id="theme-toggle"/>
                     <span className="slider round"></span>
