@@ -22,7 +22,8 @@ body {
   --text_btn:white;
   --text:black;
   --image:url('/AB.jpeg');
-  --avatar:url('/OIP-removebg-preview.png');
+  --avatar:url('/A1.png');
+  --mini-avatar:rgba(63, 65, 160, 0.452);
 }
 
 [data-theme='dark']{
@@ -39,6 +40,7 @@ body {
   --anuncio: #7a34e4;
   --image:url('/R.jpg');
   --avatar:url('/starlord-removebg-preview.png');
+  --mini-avatar:rgba(138, 106, 64, 0.452);
 }
 
 .switch {

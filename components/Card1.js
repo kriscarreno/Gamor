@@ -63,7 +63,11 @@ const Card1 = () => {
                 <h4 style={{textAlign:'center',color:' var(--message)',fontSize:'small'}}>Join Live Stream</h4>
                 <button className={styles.addbtn}><FaUserPlus style={{color:'white'}} /></button>
                 <a className={styles.btn} style={{display:'flex',justifyContent:'center'}}><button style={{backgroundColor:'white',color:'var(--primary-color)',height:'50px',width:'120px',fontSize:'large'}}>11:45</button></a>
-               <div className={styles.image}></div> 
+               <div className={styles.image}>
+                <div className={styles.cardAvatar}><img src='/OIP.png' /></div>
+                <div className={styles.cardAvatar}><img src='/A2.png' /></div>
+                </div>
+                
             </div>
             
             <div className={styles.container}>
