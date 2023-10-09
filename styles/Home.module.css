@@ -13,7 +13,7 @@
 @media screen and (max-height: 100px){
   .anuncio{
     position: relative;
-    top:100%
+    top:100%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -35,6 +35,7 @@
     position: relative;
     top:50%
   }
+
 }
 .container{
   display:flex;
@@ -92,6 +93,9 @@
 }
 
 .selector button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--background-color);
   border: none;
   border-radius: 30px;
@@ -100,6 +104,11 @@
   margin: 5px;
   color: var(--text);
   transition: all 0.3s ease;
+}
+.selector button img{
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
 }
 
 .selector button:focus{
@@ -133,5 +142,16 @@
     border-radius: 50%;
     border: 1px solid var(--anuncio);
     clip-path: ellipse(160px 50px at 60% 60%);
-    transform: rotate(-15deg) skewX(-10dg);
+    transform: rotate(-15deg);
+}
+
+.addbtn{
+  position: relative;
+  top:5%;
+  left: 15%;
+  border: none;
+  border-radius: 100%;
+  height: 80px;
+  width: 50px;
+  background-color: rgba(253, 253, 253, 0.466);
 }

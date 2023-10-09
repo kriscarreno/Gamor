@@ -51,17 +51,17 @@
 .game .uno{
     display: flex;
     align-items: center;
-    grid-column: span 5 /span 5;
+    grid-column: span 7 /span 7;
 }
 .game .dos{
     display: flex;
     align-items: center;
-    grid-column: span 5 /span 5;
+    grid-column: span 4 /span 4;
 }
 .game .tres{
     display: flex;
     align-items: center;
-    grid-column: span 2 /span 2;
+    grid-column: span 1 /span 1;
 }
 .game a{
     display: flex;

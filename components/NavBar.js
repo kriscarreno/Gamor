@@ -28,9 +28,9 @@ export default function Navbar() {
         
         <ul className={styles.links}>
         <li><a href='/' className={router.pathname == '/' ? styles.current : ''}>Home</a></li>
-      <li><a href='/streams' className={router.pathname == '/streams' ? 'active' : ''}>Streams</a></li>
-      <li><a href='/party' className={router.pathname == '/party' ? 'active' : ''}>Party</a></li>
-      <li><a href='/premium' className={router.pathname == '/premium' ? 'active' : ''}>Premium</a></li>
+      <li><a href='/streams' className={router.pathname == '/streams' ? styles.current : ''}>Streams</a></li>
+      <li><a href='/party' className={router.pathname == '/party' ? styles.current : ''}>Party</a></li>
+      <li><a href='/premium' className={router.pathname == '/premium' ? styles.current : ''}>Premium</a></li>
         </ul>
         </nav>
         <h1 className={styles.title}>Gamor</h1>

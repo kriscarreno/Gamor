@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image';
 import { useState,useEffect } from 'react';
 import SearchCard from './SearchCard';
+import {FaUserPlus} from 'react-icons/fa'
 const Card1 = () => {
     const [loggedIn, setLoggedIn] = useState(false);
 
@@ -46,12 +47,11 @@ const Card1 = () => {
                 <a className={styles.btn}><button  style={{backgroundColor:'var(--button-focus)'}}>Sign In</button></a>
                 </div>}  
                 <div className={styles.toggle}>
-                  
+                <p style={{color:'var(--text)',marginRight:'10px'}}>Toggle Theme</p>
                  <label className="switch" >
                 <input type="checkbox" id="theme-toggle"/>
                 <span className="slider round"></span>
                 </label>       
-                <p style={{color:'var(--text)',marginLeft:'3px'}}>Toggle Theme</p>
                 </div>
          
                 </div> 
@@ -61,6 +61,7 @@ const Card1 = () => {
               
                 <h2 style={{textAlign:'center', color:'white',fontSize:'x-large',marginTop:'50px'}}>Fornite New Session</h2>
                 <h4 style={{textAlign:'center',color:' var(--message)',fontSize:'small'}}>Join Live Stream</h4>
+                <button className={styles.addbtn}><FaUserPlus style={{color:'white'}} /></button>
                 <a className={styles.btn} style={{display:'flex',justifyContent:'center'}}><button style={{backgroundColor:'white',color:'var(--primary-color)',height:'50px',width:'120px',fontSize:'large'}}>11:45</button></a>
                <div className={styles.image}></div> 
             </div>
@@ -68,7 +69,7 @@ const Card1 = () => {
             <div className={styles.container}>
                 <p style={{color:'var(--text)',marginTop:'50px'}}><spam style={{color:'gray'}}>01</spam>. Choose Platform</p>
                 <div className={styles.selector}>
-                    <button>Party</button>
+                    <button><img src="/party.png"/>Party</button>
                     <button>Stream</button>
                     <button>Friends</button>
                 </div>
