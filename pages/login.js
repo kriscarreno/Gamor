@@ -1,6 +1,7 @@
  import { useRouter } from 'next/router';
 import styles from '../styles/Login.module.css'
 import { useState } from 'react';
+import Link from 'next/link';
  const Login = () => {
     const[form,setDataForm]=useState(
         {
@@ -57,7 +58,10 @@ import { useState } from 'react';
                         <input onChange={handleInputChange} value={form.name}  type='text' name='name' placeholder='Online'></input>
                         <p>Password</p>
                         <input onChange={handleInputChange} value={form.password} type='Password'  name='password' placeholder='******'></input>
+                        <div>
                         <button type='submit' >Sign In</button>
+                        <Link legacyBehavior href='/'><a>Back to Home</a></Link>
+                        </div>
                         <a style={{marginRight:'5px'}}>Toggle Theme</a>
                         <label className="switch" >
                     <input type="checkbox" id="theme-toggle"/>

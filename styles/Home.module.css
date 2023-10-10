@@ -10,32 +10,7 @@
   border-radius: 20px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-@media screen and (max-height: 100px){
-  .anuncio{
-    position: relative;
-    top:100%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .card1 {
-    flex-direction: column;
-  }
-  .container{
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .btn_container{
-    flex-direction: column;
-  }
-  .container .btn button{
-    margin-bottom: 2px;
-  }
-  .anuncio{
-    position: relative;
-    top:50%
-  }
-}
+
 .container{
   display:flex;
   flex-direction: column;
@@ -76,9 +51,11 @@
 
 .anuncio{
   position: absolute;
-  bottom:30%;
+  top:45%;
+  left: 38%;
   font-size: 3em;
   font-weight: bold;
+  transform: translate(-50%,-50%);
 }
 
 
@@ -102,34 +79,39 @@
   height: 40px;
   margin: 5px;
   color: var(--text);
+  padding-left: 3px;
   transition: all 0.3s ease;
 }
+
+.selector button:focus{
+  background-color: var(--focus-button);
+}
+
 .selector button img{
   height: 50%;
   width: 50%;
   object-fit: contain;
 }
 
-.selector button:focus{
-  background-color: var(--secondary-color);
-}
-
 .image{
+  /* position: relative;
+  top: 7.5%; */
+  display: flex;
   justify-content: space-between;
   background: var(--avatar);
-   background-size: cover; 
+  background-size: cover; 
   background-position: center;
   width: 100%;
-  height: 100%;
-  display: flex;
+  height: 70%;
 }
 
 .toggle{
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 .circulos{
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -144,18 +126,6 @@
     clip-path: ellipse(160px 50px at 60% 60%);
     transform: rotate(-15deg);
 }
-
-.addbtn{
-  position: relative;
-  top:5%;
-  left: 15%;
-  border: none;
-  border-radius: 100%;
-  height: 80px;
-  width: 50px;
-  background-color: rgba(253, 253, 253, 0.466);
-}
-
 .cardAvatar{
   position: static;
   height: 60px;
@@ -163,10 +133,38 @@
   border-radius: 20px;
   background-color: var(--mini-avatar);
 }
-
-
 .cardAvatar img{
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.btnAvatar{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%,-50%);
+  background-color: black;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .card1 {
+    flex-direction: column;
+  }
+  .container{
+    height: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn_container{
+    flex-direction: column;
+  }
+  .container .btn button{
+    margin-bottom: 2px;
+  }
+  .toggle{
+    flex-direction: column;
+  }
 }

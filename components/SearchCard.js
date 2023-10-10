@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from '../styles/SearchCard.module.css'
 import { games } from '@/data/games';
+import {LuSettings2} from 'react-icons/lu'
 const SearchCard = () => {
     const [searchResult,setSearchResult]=useState(games)
     const [term,setTerm]=useState('')
@@ -16,8 +17,10 @@ const SearchCard = () => {
     return ( 
        <>
        <div className={styles.container}>
-        {/* <div className={styles.containersearchbar}> */}
+        <span className={styles.inputcontainer}>
             <input type='text' value={term} onChange={handleChange}  className={styles.searchbar}/>
+            <LuSettings2 size={20} style={{color:'var(--message)',padding:'25px'}} />
+            </span>
         <ul className={styles.games}>
             {searchResult.map(result=>
             (

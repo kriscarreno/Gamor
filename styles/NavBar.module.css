@@ -1,5 +1,6 @@
 
 .title{
+  font-size: x-large;
   text-align: center;
   color: var(--text);
   padding: 0 8rem;
@@ -69,7 +70,17 @@
   justify-content: space-between;
   padding: 0 3rem;
 }
-
+.circulo{
+  position: absolute;
+  right:1%;
+  z-index: 1;
+  height: 30px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  clip-path: ellipse(60px 15px at 60% 60%);
+  transform: rotate(-15deg);
+}
 
 @media screen and (max-width:1000px) {
   .headercontainer{

@@ -1,7 +1,7 @@
 .categoriescontainer{
     display: grid;
     grid-template-columns: repeat(4, minmax(230px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 @media screen and (max-width: 1000px) {
     .categoriescontainer{
@@ -17,15 +17,23 @@
     display: block;
     justify-content: center;
     margin-bottom: 20px;
+    
 }
 
 .categorie{
+    display: flex;
     background-color: var(--secondary-color);
-    border-radius: 30px;
+    border-radius: 15px;
+    height: 150px;
 }
 
-.categoriescontainer :hover{
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+.categorie div{
+    display: flex;
+    flex-direction: column;
+}
+
+.categorie p :hover{
+    transform: scale(1.1);
     cursor: pointer;
 }
 

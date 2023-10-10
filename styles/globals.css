@@ -15,31 +15,36 @@ body {
   --background-color: #f0f2f4;
   --anuncio: rgb(220, 143, 9);
   --message:#414040;
-  --button:rgb(0, 0, 0);
-  --button-focus:rgba(240, 242, 244, 0);
-  --bg_btn:rgb(255, 255, 255);
-  --text_btn2:white;
-  --text_btn:white;
   --text:black;
+  --text_btn:white;
+  --text_btn2:white;
+  --button-focus:rgba(240, 242, 244, 0);
+  --button:rgb(0, 0, 0);
+  --bg_btn:rgb(255, 255, 255);
+  --focus-button: #cccccc;
   --image:url('/AB.jpeg');
-  --avatar:url('/A1.png');
+  --categorie-image:url('/AB copy.jpeg');
+  --avatar:url('/AV2.png');
   --mini-avatar:rgba(63, 65, 160, 0.452);
+
 }
 
 [data-theme='dark']{
-  --text:white;
-  --button-focus:#f0f2f400;
   --primary-color: #fe8944;
-  --message:#747474;
   --secondary-color: #21272f;
   --background-color: #1a2028;
-  --button:#13171c;
+  --anuncio: #7a34e4;
+  --anuncio: #7a34e4;
+  --text:white;
   --text_btn:black;
   --text_btn2:rgb(255, 255, 255);
+  --button-focus:#f0f2f400;
+  --button:#13171c;
+  --focus-button: #343a3f ;
   --bg_btn:#343a3f;
-  --anuncio: #7a34e4;
   --image:url('/R.jpg');
-  --avatar:url('/starlord-removebg-preview.png');
+  --categorie-image:url('/R copy.jpg');
+  --avatar:url('/AV1.png');
   --mini-avatar:rgba(138, 106, 64, 0.452);
 }
 

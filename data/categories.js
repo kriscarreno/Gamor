@@ -14,7 +14,7 @@ export const categories=[
 
     },
     {
-        title:'adventure Games',
+        title:'Adventure Games',
         number:'03',
         color:'red',
         image:''
@@ -43,13 +43,13 @@ export const categories=[
     {
         title:'Shooter Games',
         number:'07',
-        color:null,
-        image:'var(--image)'
+        color:'transparent',
+        image:'var(--categorie-image)'
     },
     {
         title:'All Categories',
         number:'VIEW ALL',
-        color:null,
+        color:'transparent',
         image:''
     }
 ]

@@ -23,27 +23,35 @@ export default function Navbar() {
 
   return (
     <header className={styles.headercontainer} >
-    <nav className={styles.header}>
-         
-        
+      <nav className={styles.header}>
         <ul className={styles.links}>
-        <li><a href='/' className={router.pathname == '/' ? styles.current : ''}>Home</a></li>
-      <li><a href='/streams' className={router.pathname == '/streams' ? styles.current : ''}>Streams</a></li>
-      <li><a href='/party' className={router.pathname == '/party' ? styles.current : ''}>Party</a></li>
-      <li><a href='/premium' className={router.pathname == '/premium' ? styles.current : ''}>Premium</a></li>
+        <li><a style={{position:'relative'}} href='/' className={router.pathname == '/' ? styles.current : ''}><span className={styles.circulo}></span>Home</a></li>
+        <li><a href='/streams' className={router.pathname == '/streams' ? styles.current : ''}>Streams</a></li>
+        <li><a href='/party' className={router.pathname == '/party' ? styles.current : ''}>Party</a></li>
+        <li><a href='/premium' className={router.pathname == '/premium' ? styles.current : ''}>Premium</a></li>
         </ul>
-        </nav>
+      </nav>
         <h1 className={styles.title}>Gamor</h1>
-
-      <div className={styles.btncontainer} >
+    <div className={styles.btncontainer} >
       {loggedIn===true?<><a className={styles.btn}><button style={{backgroundColor:'#f0f2f400',border:'none'}} onClick={logout}>Log out</button></a>
-      <a className={styles.btn}><button style={{color:'var(--text_btn2)'}}>Profile</button></a>
+      <a className={styles.btn}>
+        <button style={{color:'var(--text_btn2)',border:'1px solid var(--message)'}}>
+          Profile</button>
+          </a>
       </>:
       <>
-            <a className={styles.btn}><button style={{backgroundColor:'#f0f2f400'}} onClick={()=>router.push('/login')}>Sign In</button></a>
-            <a className={styles.btn}><button>Create account</button></a></>
+      <a className={styles.btn}>
+        <button 
+        style={{backgroundColor:'#f0f2f400',border:'none'}} 
+        onClick={()=>router.push('/login')}
+        >Sign In</button>
+        </a>
+      <a className={styles.btn}>
+        <button style={{color:'var(--text_btn2)',border:'1px solid white'}}
+        >Create account</button></a>
+      </>
             }
-            </div>
+    </div>
             </header>
    
   );

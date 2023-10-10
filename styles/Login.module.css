@@ -42,6 +42,13 @@
     height: 400px;
     background: #fff;
   }
+  .form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
   .form p{
     margin: 0;
     padding: 0;

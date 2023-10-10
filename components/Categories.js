@@ -1,5 +1,7 @@
 import styles from '../styles/Categories.module.css'
 import { categories } from '@/data/categories';
+import {BiSolidRightArrowAlt} from 'react-icons/bi'
+
 const Categories = () => {
     return ( 
         <div className={styles.categories}>
@@ -8,9 +10,12 @@ const Categories = () => {
         {
             categories.map(Categorie=>
                 <div key={Categorie.title} className={styles.categorie} style={{backgroundImage:Categorie.image,backgroundSize:'cover',backgroundPosition:'center'}}>
-                    <p style={{color:`${Categorie.color}`}}>/</p>
-                    <p style={{color:'var(--text)'}}>{Categorie.number}</p>
-                    <p style={{color:'var(--text)'}}>{Categorie.title}</p>
+                    <p style={{color:`${Categorie.color}`,width:'100%'}}>/ 
+                    <span style={{color:'var(--text)'}}> {Categorie.number}</span>
+                    <br/>
+                    <br/>
+                    <span style={{color:'var(--text)'}}>{Categorie.title}<br/><BiSolidRightArrowAlt style={{marginTop:'10px'}} size={25}/></span>
+                    </p>
                 </div>
             )
         }
